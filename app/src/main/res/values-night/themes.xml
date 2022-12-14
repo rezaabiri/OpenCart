@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OpenCart" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_main_3</item>
+        <item name="colorPrimaryVariant">@color/color_main_1</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="windowActionBar">false</item>
+        <item name="fontFamily">@font/vazirbold</item>
+
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/liteGray</item>
+        <item name="colorControlActivated">@color/golden</item>
+    </style>
+</resources>

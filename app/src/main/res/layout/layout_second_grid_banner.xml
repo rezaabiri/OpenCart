@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_grid_banner_image"
+        android:src="@drawable/img"
+        android:background="@drawable/products_items_bg"
+        android:adjustViewBounds="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="@dimen/_8ssp"
+        android:padding="@dimen/_10ssp"
+        >
+
+    </ImageView>
+</layout>

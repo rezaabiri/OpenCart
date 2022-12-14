@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.SignInFragment">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/wave_signup_top"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/opencart"
+                android:layout_gravity="center"
+                android:padding="@dimen/_25ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15ssp"
+                android:paddingStart="@dimen/_20ssp"
+                android:text="@string/welcome_to_shop_open_cart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+               />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25ssp"
+                android:layout_marginEnd="@dimen/_15ssp"
+                android:paddingStart="@dimen/_10ssp"
+                android:text="@string/sign_in_or_sign_up_to_open_cart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_15ssp"
+                android:paddingStart="@dimen/_10ssp"
+                android:text="@string/Open_Card_is_the_best_store"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_12ssp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_15ssp"
+                android:paddingEnd="@dimen/_15ssp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_login_edit_text"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    app:boxCornerRadiusBottomStart="@dimen/_7ssp"
+                    app:boxCornerRadiusTopEnd="@dimen/_7ssp"
+                    android:hint="@string/email"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_email_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_login_edit_text"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3ssp"
+                    app:boxCornerRadiusBottomStart="@dimen/_7ssp"
+                    app:boxCornerRadiusTopEnd="@dimen/_7ssp"
+                    android:hint="@string/password"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_password_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/forgot_password"
+                    android:layout_marginTop="@dimen/_5ssp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:padding="@dimen/_15ssp"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:cornerRadius="@dimen/_7ssp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/accepted"
+                         />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/text_rules_shop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3ssp"
+                        android:clickable="true"
+                        android:textColorLink="#2196F3"
+                        android:text="@string/Rules"
+                        android:textColor="@color/color_main_2"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dont_have_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dont_have_account_yet"
+
+                    android:textColor="@color/color_main_1"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_30ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

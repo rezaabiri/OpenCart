@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@color/color_main_1"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:src="@color/color_main_1"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@color/color_main_1"
+            android:layout_marginTop="@dimen/_10ssp"
+            />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:src="@color/color_main_1"
+            android:layout_marginTop="@dimen/_10ssp"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10ssp"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_8ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/store_image"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_6ssp"
+                    android:paddingTop="@dimen/_6ssp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:src="@color/color_main_1"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_6ssp"
+                    android:paddingTop="@dimen/_6ssp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:src="@color/color_main_1"
+                        />
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_6ssp"
+                    android:paddingTop="@dimen/_6ssp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:src="@color/color_main_1"
+                        />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/store_image"
+                android:layout_width="@dimen/_90ssp"
+                android:layout_height="@dimen/_90ssp"
+                android:layout_margin="@dimen/_10ssp"
+                android:src="@color/color_main_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@color/color_main_1"
+            android:layout_marginTop="@dimen/_10ssp"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@color/color_main_1"
+            android:layout_marginTop="@dimen/_10ssp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@color/color_main_1"
+            android:layout_marginTop="@dimen/_10ssp"
+            />
+    </LinearLayout>
+</layout>

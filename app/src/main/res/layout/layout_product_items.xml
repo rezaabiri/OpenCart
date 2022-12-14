@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/layout_products_item"
+        android:layout_width="180dp"
+        android:background="@drawable/products_items_bg"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:textColor="@color/color_main_1"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/special_offer_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_main_1"
+            android:text="@string/Special_Offer"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_marginBottom="@dimen/_10ssp"
+            android:textSize="@dimen/_12ssp"
+            />
+
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5ssp"
+            android:src="@drawable/phone"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:text="@string/name"
+            android:minLines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_25ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/_7ssp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/product_main_price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="not percent"
+            android:layout_gravity="start"
+            android:textSize="@dimen/_9ssp"
+            android:layout_marginStart="@dimen/_22ssp"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:layout_marginEnd="@dimen/_25ssp"
+            tools:ignore="RtlHardcoded" />
+
+
+        <FrameLayout
+            android:id="@+id/layout_percent_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_18ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_marginBottom="@dimen/_10ssp"
+            >
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/percentage_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/percentage_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp"
+                android:padding="@dimen/_4ssp"
+                android:layout_gravity="end"
+                android:text="25%"
+                tools:ignore="RtlHardcoded" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/product_special_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.000.000"
+                android:gravity="start"
+                android:layout_gravity="center_vertical|start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"/>
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</layout>
